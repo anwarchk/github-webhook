@@ -7,22 +7,22 @@ test:
   # list of required services
   services:
     - type: rabbitmq
-      name: rabbitmq-github-webhook
+      name: rabbitmq-github-webhook-anwar
     - type: mysql
-      name: mysql-github-webhook
+      name: mysql-github-webhook-anwar
     - type: eureka
-      name: eureka-github-webhook
+      name: eureka-github-webhook-anwar
       coordinates: com.example.eureka:github-eureka:0.0.1.M1
     - type: stubrunner
-      name: stubrunner-github-webhook
+      name: stubrunner-github-webhook-anwar
       coordinates: com.example.github:github-analytics-stub-runner-boot-classpath-stubs:0.0.1.M1
       useClasspath: true
 stage:
   services:
     - type: rabbitmq
-      name: github-rabbitmq
+      name: github-rabbitmq-anwar
     - type: mysql
-      name: mysql-github
+      name: mysql-github-anwar
     - type: eureka
-      name: github-eureka
+      name: github-eureka-anwar
       coordinates: com.example.eureka:github-eureka:0.0.1.M1
