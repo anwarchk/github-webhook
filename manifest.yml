@@ -1,6 +1,6 @@
 ---
 applications:
-- name: github-webhook-anwar
+- name: github-webhook
   services:
     - github-rabbitmq
     - github-eureka
